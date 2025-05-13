@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+
+        .styled-form {
+            background-color: #fafaa5;
+            padding: 25px;
+            border-radius: 10px;
+            max-width: 650px;
+        }
+
+        .form-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 18px;
+        }
+
+      
+
+        .form-row label {
+            flex: 0 0 140px;
+            margin-right: 15px;
+            font-size: 0.9em;
+            color: #000000;
+            text-align: left;
+        }
+
+        .form-row input[type="text"],
+        .form-row input[type="email"] {
+            flex-grow: 1;
+            padding: 9px;
+            border: 1px solid #767676;
+            box-sizing: border-box;
+            font-size: 0.9em;
+            background-color: #FFFFFF;
+        }
+
+        .form-row input[type="submit"] {
+            background-color: #0000FF;
+            color: #FFFFFF;
+            padding: 8px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="styled-form" method="POST">
+        <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <div class="form-row">
+            <label for="birthplace">Where you born</label>
+            <input type="text" id="birthplace" name="birthplace">
+        </div>
+        <div class="form-row">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div class="form-row">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+
+</body>
+
+</html>
